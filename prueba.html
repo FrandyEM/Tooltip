@@ -1,0 +1,30 @@
+
+<script>
+    // Fetch footer.html and append its contents to the body element
+// fetch('https://raw.githubusercontent.com/FrandyEM/frandyem.github.io/main/index.html')
+fetch('https://raw.githubusercontent.com/FrandyEM/frandyem.github.io/main/index.html')
+
+.then(response => response.text())
+.then(data => {
+    // Append the fetched HTML content to the body element
+    document.body.insertAdjacentHTML('beforeend', data);
+})
+.catch(error => console.error(error));
+</script>
+<script src="https://cdn.jsdelivr.net/gh/FrandyEM/mi-js-para-tooltip/miapp.js"></script>
+
+<!-- <script>
+    fetch('https://raw.githubusercontent.com/FrandyEM/frandyem.github.io/main/index.html')
+      .then(response => response.text())
+      .then(data => {
+        // Append the fetched HTML content to the body element
+        document.body.insertAdjacentHTML('beforeend', data);
+        // Load miapp.js after HTML content is loaded
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/gh/FrandyEM/mi-js-para-tooltip/miapp.js';
+        document.head.appendChild(script);
+      })
+      .catch(error => console.error(error));
+</script> -->
+
+
